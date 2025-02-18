@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="header-left">
+                <img src="ansh (2).jpg" alt="Ansh Patel" class="profile-photo">
+            </div>
+            <div class="header-right">
+                <h1>Ansh Patel</h1>
+                <p>Web Developer</p>
+                <ul>
+                    <li><strong>Phone:</strong> +91 123 456 7890</li>
+                    <li><strong>Email:</strong> anshpatel@example.com</li>
+                    <li><strong>Address:</strong> 123 Vaishnovdevi Circle, Ahmedabad, India</li>
+                    <li><strong>Linkedin Profile:</strong>anshpatel6171</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#summary" class="sidebar-link">Summary</a></li>
+                <li><a href="#Education" class="sidebar-link">Education</a></li>
+                <li><a href="#experience" class="sidebar-link">Experience</a></li>
+                <li><a href="#skills" class="sidebar-link">Skills</a></li>
+                <li><a href="#languages" class="sidebar-link">Languages</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <section id="summary" class="content-section">
+                <h2>Summary</h2>
+                <p>I am a passionate web developer with over 5 years of experience in building dynamic and responsive websites. I have expertise in HTML, CSS, JavaScript.I am always eager to learn and keep up with the latest trends in web development.Efficient and knowledgeable coder with skills in HTML, CSS, PHP, and JavaScript programming languages. Coordinated and collaborative team player with attention to detail, graphic design skills, and ability to contribute to code base improvement initiatives and UX improvement projects.</p>
+            </section>
+
+            <section id="Education" class="content-section">
+                <h2>Summary</h2>
+                <p>I am a passionate web developer with over 5 years of experience in building dynamic and responsive websites. I have expertise in HTML, CSS, JavaScript.I am always eager to learn and keep up with the latest trends in web development.Efficient and knowledgeable coder with skills in HTML, CSS, PHP, and JavaScript programming languages. Coordinated and collaborative team player with attention to detail, graphic design skills, and ability to contribute to code base improvement initiatives and UX improvement projects.</p>
+                </section>
+
+            <section id="experience" class="content-section">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>Web Developer</h3>
+                    <p><strong>January 2025</strong></p>
+                    <ul>
+                        <li> &#9670 Developed responsive websites using HTML, CSS, and JavaScript.</li>
+                        <li> &#9670 Collaborated with the design team to implement modern UI/UX designs.</li>
+                        <li> &#9670 Optimized website performance and implemented SEO strategies.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3>Front-End Developer at Creative Solutions</h3>
+                    <p><strong>June 2017 - December 2019</strong></p>
+                    <ul>
+                        <li>&#9670 Built interactive web applications using React and Redux.</li>
+                        <li>&#9670 Worked closely with back-end developers to integrate APIs.</li>
+                        <li>&#9670 Led code reviews and maintained coding standards across the team.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="skills" class="content-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li> &#128924 HTML, CSS, JavaScript</li>
+                    <li> &#128924 Git, GitHub</li>
+                    <li>&#128924 Responsive Web Design</li>
+                    <li>&#128924 Internet of Things</li>
+                </ul>
+            </section>
+
+            <section id="languages" class="content-section">
+                <h2>Languages Known</h2>
+                <ul>
+                    <li>&#128924 English</li>
+                    <li>&#128924 Gujarati</li>
+                    <li>&#128924 Hindi</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script>
+        const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                document.querySelectorAll('.content-section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                const targetSection = document.querySelector(e.target.getAttribute('href'));
+                targetSection.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
